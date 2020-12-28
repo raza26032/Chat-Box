@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="shortcut icon" href="CB-01.png" type="image/png">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .contact-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 350px;
+        padding: 80px 40px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .avatar {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: calc(-250px/2);
+        left: 70px;
+    }
+
+    .contact-form p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .contact-form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input[type=text],
+    .contact-form input[type=text] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .contact-form input[type=submit] {
+        height: 30px;
+        color: #fff;
+        font-size: 15px;
+        background: #a3d063;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        margin-top: 15%;
+    }
+</style>
+
+<body>
+    <div class="top_menu">
+        <div class="buttons">
+            <div class="logo"><img src="CB-02-01-01.png"></div>
+        </div>
+        <div class="room-title1">Created By: Ahmed Raza ----- Under Supervision: Sir M.Inzamam Malik</div>
+    </div>
+    <div class="title2">Let's Start Chat</div>
+    <div class="form">
+        <div class="contact-form">
+            <img alt="" class="avatar" src="Chat app white logo-01.png">
+            <form action="Chat.html">
+                <p for="name">Display Name :</p>
+                <input id="name" name="name" type="text" required>
+                <p for="room">Enter Room Number :</p>
+                <input id="room" name="room" type="text">
+                <input type="submit" value="Join Chat">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
