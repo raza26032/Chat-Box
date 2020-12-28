@@ -128,7 +128,6 @@ $form.on("submit", function (event) {
     $("ul.messages.list-group").animate({
         scrollTop: scrollLength - offset.top
     });
-
 });
 
 function notifyMe(msg) {
@@ -139,7 +138,7 @@ function notifyMe(msg) {
     else if (Notification.permission === "granted") {
         var notification = new Notification('Chat Box', {
             body: msg.name + ": " + msg.text,
-            icon: '../logos/CB-01.png'
+            icon: 'CB-01.png'
         });
         notification.onclick = function (event) {
             event.preventDefault();
@@ -157,7 +156,7 @@ function notifyMe(msg) {
             if (permission === "granted") {
                 var notification = new Notification('Chat Box', {
                     body: msg.name + ": " + msg.text,
-                    icon: '../logos/CB-01.png'
+                    icon: 'CB-01.png'
                 });
                 notification.onclick = function (event) {
                     event.preventDefault();
