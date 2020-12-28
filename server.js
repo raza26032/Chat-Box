@@ -1,7 +1,7 @@
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 var express = require("express");
 var app = express();
-var http = require("http").Server(app);
+const http = require("http").createServer(app);
 
 var moment = require("moment");
 
