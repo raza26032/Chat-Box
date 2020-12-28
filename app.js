@@ -128,7 +128,6 @@ $form.on("submit", function (event) {
     $("ul.messages.list-group").animate({
         scrollTop: scrollLength - offset.top
     });
-
 });
 
 function notifyMe(msg) {

@@ -1,4 +1,4 @@
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 5000;
 var express = require("express");
 var app = express();
 var http = require("http").Server(app);
@@ -9,7 +9,7 @@ var clientInfo = {};
 
 var io = require("socket.io")(http);
 
-app.use(express.static(__dirname + '/Chat-Box'));
+app.use(express.static(__dirname + '/'));
 
 function sendCurrentUsers(socket) {
     var info = clientInfo[socket.id];
